@@ -1,0 +1,43 @@
+<!-- HTML: Es un lenguaje de mnarcado de hipertexto que se utiliza para crear paginas web y sus princepales etiquetas son:
+html: Define el principio y el final de un documento HTML, 
+head: Define la cabecera de un documento HTML, title: Define el titulo de un documento HTML, body: Define el cuerpo de un documento HTML,
+-- Java script es un lenguaje de programacion ortientado a objetos y orientado a eventos
+lo que significa que se ejecuta en el navegador del cliente se le considera un lenguaje
+multiplataforma ya que se puede ejecutar en cualquier sistema operativo
+-- Pregunta 1: El DOM es una representacion jerarquica que tienr un arbol de nodos
+-- El id sirve para identificar etiquetas de HTML
+-- Con "class" se pueden identificar los .class 
+-->
+<html>
+<head>
+<title>Mi primera pagina web</title>
+</head>
+<body>
+<h1>Este es un encabezado</h1>
+<p>Este es un parrafo</p>
+<br /> <p>Esto es un salto de linea </p> 
+<form action="#" method="post">
+<label> Etiqueta Nombre: </label>
+<input type="text" name="nombre" id="nombre" value="" placeholder="Ingresa tu nombre" />
+<label> Etiqueta Apellido: </label>
+<input type="text" name="Apellido" id="apellido" value="" placeholder="Ingresa tu apellido" />
+<label> Etiqueta Edad: </label>
+<input type="text" name="Edad" id="edad" value="" placeholder="Ingresa tu edad" />
+<label> Etiqueta Telefono: </label>
+<input type="text" name="Telefono" id="telefono" value="" placeholder="Ingresa tu telefono" />
+</form>
+
+<!-- Código JavaScript -->
+<script>
+let nombre = document.getElementById('nombre').value 
+console.log(nombre);
+let apellido = document.getElementById('apellido').value
+console.log(apellido);
+let edad = document.getElementById('edad').value
+console.log(edad);
+let telefono = document.getElementById('telefono').value   
+console.log(telefono);
+</script>
+
+</body> 
+</html>
