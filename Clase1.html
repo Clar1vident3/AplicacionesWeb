@@ -13,7 +13,7 @@ multiplataforma ya que se puede ejecutar en cualquier sistema operativo
 <title>Mi primera pagina web</title>
 </head>
 <body>
-<h1>Este es un encabezado</h1>
+<h1>The new time work</h1>
 <p>Este es un parrafo</p>
 <br /> <p>Esto es un salto de linea </p> 
 <form action="#" method="post">
@@ -27,16 +27,22 @@ multiplataforma ya que se puede ejecutar en cualquier sistema operativo
 <input type="text" name="Telefono" id="telefono" value="" placeholder="Ingresa tu telefono" />
 </form>
 
-<!-- Código JavaScript -->
+<!-- Código JavaScript --><!--Este apartado de JavaScript sirve para mostrar los datos que se ingresan en el formulario-->
+
+<button onclick="mostrarDatos()">Mostrar Datos</button>
 <script>
-let nombre = document.getElementById('nombre').value 
-console.log(nombre);
-let apellido = document.getElementById('apellido').value
-console.log(apellido);
-let edad = document.getElementById('edad').value
-console.log(edad);
-let telefono = document.getElementById('telefono').value   
-console.log(telefono);
+function mostrarDatos() {
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let edad = document.getElementById('edad').value;
+    let telefono = document.getElementById('telefono').value;
+
+    console.log("Nombre: " + nombre);
+    console.log("Apellido: " + apellido);
+    console.log("Edad: " + edad);
+    console.log("Telefono: " + telefono);
+}
+
 </script>
 
 </body> 
